@@ -1,0 +1,49 @@
+{
+  "id": "shadowrun-third-edition",
+  "title": "Shadowrun Third Edition",
+  "description": "The Shadowrun Third Edition system for FoundryVTT!",
+  "authors": [
+    {
+      "name": "smyhk",
+      "discord": "smyhk"
+    }
+  ],
+  "url": "https://github.com/smyhk/sr3-foundryvtt",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "bugs": "Replace this with a link to file issues or tickets",
+  "changelog": "CHANGELOG.md",
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/shadowrun-third-edition/assets/anvil-impact.png",
+      "thumbnail": "systems/shadowrun-third-edition/assets/anvil-impact.png"
+    }
+  ],
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": 12,
+    "verified": "13"
+  },
+  "esmodules": ["module/shadowrun-third-edition.mjs"],
+  "styles": ["css/shadowrun-third-edition.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "packFolders": [],
+  "socket": false,
+  "manifest": "https://github.com/smyhk/sr3-foundryvtt/releases/download/v0.1.0/system.json",
+  "download": "https://github.com/smyhk/sr3-foundryvtt/archive/refs/tags/v0.1.0.zip",
+  "background": "systems/shadowrun-third-edition/assets/anvil-impact.png",
+  "grid": {
+        "distance": 5,
+        "units": "ft"
+    },
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power"
+}
