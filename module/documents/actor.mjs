@@ -2,7 +2,7 @@
  * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.
  * @extends {Actor}
  */
-export class ShadowrunThirdEditionActor extends Actor {
+export class Shadowrun3EActor extends Actor {
   /** @override */
   prepareData() {
     // Prepare data for the actor. Calling the super version of this executes
@@ -30,7 +30,7 @@ export class ShadowrunThirdEditionActor extends Actor {
   prepareDerivedData() {
     const actorData = this;
     const systemData = actorData.system;
-    const flags = actorData.flags.shadowrunthirdedition || {};
+    const flags = actorData.flags.shadowrun3e || {};
 
     // Make separate methods for each Actor type (character, npc, etc.) to keep
     // things organized.

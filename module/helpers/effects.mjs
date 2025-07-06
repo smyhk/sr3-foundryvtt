@@ -43,17 +43,17 @@ export function prepareActiveEffectCategories(effects) {
   const categories = {
     temporary: {
       type: 'temporary',
-      label: game.i18n.localize('SHADOWRUN_THIRD_EDITION.Effect.Temporary'),
+      label: game.i18n.localize('SHADOWRUN_3E.Effect.Temporary'),
       effects: [],
     },
     passive: {
       type: 'passive',
-      label: game.i18n.localize('SHADOWRUN_THIRD_EDITION.Effect.Passive'),
+      label: game.i18n.localize('SHADOWRUN_3E.Effect.Passive'),
       effects: [],
     },
     inactive: {
       type: 'inactive',
-      label: game.i18n.localize('SHADOWRUN_THIRD_EDITION.Effect.Inactive'),
+      label: game.i18n.localize('SHADOWRUN_3E.Effect.Inactive'),
       effects: [],
     },
   };

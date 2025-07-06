@@ -1,12 +1,12 @@
 // Import document classes.
-import { ShadowrunThirdEditionActor } from './documents/actor.mjs';
-import { ShadowrunThirdEditionItem } from './documents/item.mjs';
+import { Shadowrun3EActor } from './documents/actor.mjs';
+import { Shadowrun3EItem } from './documents/item.mjs';
 // Import sheet classes.
-import { ShadowrunThirdEditionActorSheet } from './sheets/actor-sheet.mjs';
-import { ShadowrunThirdEditionItemSheet } from './sheets/item-sheet.mjs';
+import { Shadowrun3EActorSheet } from './sheets/actor-sheet.mjs';
+import { Shadowrun3EItemSheet } from './sheets/item-sheet.mjs';
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from './helpers/templates.mjs';
-import { SHADOWRUN_THIRD_EDITION } from './helpers/config.mjs';
+import { SHADOWRUN_3E } from './helpers/config.mjs';
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -15,14 +15,14 @@ import { SHADOWRUN_THIRD_EDITION } from './helpers/config.mjs';
 Hooks.once('init', function () {
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
-  game.shadowrunthirdedition = {
-    ShadowrunThirdEditionActor,
-    ShadowrunThirdEditionItem,
+  game.shadowrun3e = {
+    Shadowrun3EActor,
+    Shadowrun3EItem,
     rollItemMacro,
   };
 
   // Add custom constants for configuration.
-  CONFIG.SHADOWRUN_THIRD_EDITION = SHADOWRUN_THIRD_EDITION;
+  CONFIG.SHADOWRUN_3E = SHADOWRUN_3E;
 
   /**
    * Set an initiative formula for the system
@@ -34,8 +34,8 @@ Hooks.once('init', function () {
   };
 
   // Define custom Document classes
-  CONFIG.Actor.documentClass = ShadowrunThirdEditionActor;
-  CONFIG.Item.documentClass = ShadowrunThirdEditionItem;
+  CONFIG.Actor.documentClass = Shadowrun3EActor;
+  CONFIG.Item.documentClass = Shadowrun3EItem;
 
   // Active Effects are never copied to the Actor,
   // but will still apply to the Actor from within the Item
@@ -44,14 +44,14 @@ Hooks.once('init', function () {
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet);
-  Actors.registerSheet('shadowrun-third-edition', ShadowrunThirdEditionActorSheet, {
+  Actors.registerSheet('shadowrun-3e', Shadowrun3EActorSheet, {
     makeDefault: true,
-    label: 'SHADOWRUN_THIRD_EDITION.SheetLabels.Actor',
+    label: 'SHADOWRUN_3E.SheetLabels.Actor',
   });
   Items.unregisterSheet('core', ItemSheet);
-  Items.registerSheet('shadowrun-third-edition', ShadowrunThirdEditionItemSheet, {
+  Items.registerSheet('shadowrun-3e', Shadowrun3EItemSheet, {
     makeDefault: true,
-    label: 'SHADOWRUN_THIRD_EDITION.SheetLabels.Item',
+    label: 'SHADOWRUN_3E.SheetLabels.Item',
   });
 
   // Preload Handlebars templates.
@@ -99,7 +99,7 @@ async function createItemMacro(data, slot) {
   const item = await Item.fromDropData(data);
 
   // Create the macro command using the uuid.
-  const command = `game.shadowrunthirdedition.rollItemMacro("${data.uuid}");`;
+  const command = `game.shadowrun3e.rollItemMacro("${data.uuid}");`;
   let macro = game.macros.find(
     (m) => m.name === item.name && m.command === command
   );
@@ -109,7 +109,7 @@ async function createItemMacro(data, slot) {
       type: 'script',
       img: item.img,
       command: command,
-      flags: { 'shadowrun-third-edition.itemMacro': true },
+      flags: { 'shadowrun-3e.itemMacro': true },
     });
   }
   game.user.assignHotbarMacro(macro, slot);

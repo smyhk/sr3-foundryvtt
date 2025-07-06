@@ -203,11 +203,11 @@
   text-align: center;
 }
 
-/* Styles limited to shadowrun-third-edition sheets */
-.shadowrun-third-edition .item-form {
+/* Styles limited to shadowrun-3e sheets */
+.shadowrun-3e .item-form {
   font-family: "Roboto", sans-serif;
 }
-.shadowrun-third-edition .sheet-header {
+.shadowrun-3e .sheet-header {
   flex: 0 auto;
   overflow: hidden;
   display: flex;
@@ -216,43 +216,43 @@
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-.shadowrun-third-edition .sheet-header .profile-img {
+.shadowrun-3e .sheet-header .profile-img {
   flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
 }
-.shadowrun-third-edition .sheet-header .header-fields {
+.shadowrun-3e .sheet-header .header-fields {
   flex: 1;
 }
-.shadowrun-third-edition .sheet-header h1.charname {
+.shadowrun-3e .sheet-header h1.charname {
   height: 50px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
 }
-.shadowrun-third-edition .sheet-header h1.charname input {
+.shadowrun-3e .sheet-header h1.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-.shadowrun-third-edition .sheet-tabs {
+.shadowrun-3e .sheet-tabs {
   flex: 0;
 }
-.shadowrun-third-edition .sheet-body,
-.shadowrun-third-edition .sheet-body .tab,
-.shadowrun-third-edition .sheet-body .tab .editor {
+.shadowrun-3e .sheet-body,
+.shadowrun-3e .sheet-body .tab,
+.shadowrun-3e .sheet-body .tab .editor {
   height: 100%;
 }
-.shadowrun-third-edition .tox .tox-editor-container {
+.shadowrun-3e .tox .tox-editor-container {
   background: #fff;
 }
-.shadowrun-third-edition .tox .tox-edit-area {
+.shadowrun-3e .tox .tox-edit-area {
   padding: 0 8px;
 }
-.shadowrun-third-edition .resource-label {
+.shadowrun-3e .resource-label {
   font-weight: bold;
 }
-.shadowrun-third-edition .items-header {
+.shadowrun-3e .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -261,17 +261,17 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.shadowrun-third-edition .items-header > * {
+.shadowrun-3e .items-header > * {
   font-size: 14px;
   text-align: center;
 }
-.shadowrun-third-edition .items-header .item-name {
+.shadowrun-3e .items-header .item-name {
   font-weight: bold;
   padding-left: 5px;
   text-align: left;
   display: flex;
 }
-.shadowrun-third-edition .items-list {
+.shadowrun-3e .items-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -279,12 +279,12 @@
   scrollbar-width: thin;
   color: #444;
 }
-.shadowrun-third-edition .items-list .item-list {
+.shadowrun-3e .items-list .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.shadowrun-third-edition .items-list .item-name {
+.shadowrun-3e .items-list .item-name {
   flex: 2;
   margin: 0;
   overflow: hidden;
@@ -293,46 +293,46 @@
   align-items: center;
   display: flex;
 }
-.shadowrun-third-edition .items-list .item-name h3, .shadowrun-third-edition .items-list .item-name h4 {
+.shadowrun-3e .items-list .item-name h3, .shadowrun-3e .items-list .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
-.shadowrun-third-edition .items-list .item-controls {
+.shadowrun-3e .items-list .item-controls {
   display: flex;
   flex: 0 0 100px;
   justify-content: flex-end;
 }
-.shadowrun-third-edition .items-list .item-controls a {
+.shadowrun-3e .items-list .item-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
 }
-.shadowrun-third-edition .items-list .item {
+.shadowrun-3e .items-list .item {
   align-items: center;
   padding: 0 2px;
   border-bottom: 1px solid #c9c7b8;
 }
-.shadowrun-third-edition .items-list .item:last-child {
+.shadowrun-3e .items-list .item:last-child {
   border-bottom: none;
 }
-.shadowrun-third-edition .items-list .item .item-name {
+.shadowrun-3e .items-list .item .item-name {
   color: #191813;
 }
-.shadowrun-third-edition .items-list .item .item-name .item-image {
+.shadowrun-3e .items-list .item .item-name .item-image {
   flex: 0 0 30px;
   height: 30px;
   background-size: 30px;
   border: none;
   margin-right: 5px;
 }
-.shadowrun-third-edition .items-list .item-prop {
+.shadowrun-3e .items-list .item-prop {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.shadowrun-third-edition .items-list .items-header {
+.shadowrun-3e .items-list .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -341,26 +341,26 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.shadowrun-third-edition .items-list .items-header > * {
+.shadowrun-3e .items-list .items-header > * {
   font-size: 12px;
   text-align: center;
 }
-.shadowrun-third-edition .items-list .items-header .item-name {
+.shadowrun-3e .items-list .items-header .item-name {
   padding-left: 5px;
   text-align: left;
 }
-.shadowrun-third-edition .item-formula {
+.shadowrun-3e .item-formula {
   flex: 0 0 200px;
   padding: 0 8px;
 }
-.shadowrun-third-edition .effects .item .effect-source,
-.shadowrun-third-edition .effects .item .effect-duration,
-.shadowrun-third-edition .effects .item .effect-controls {
+.shadowrun-3e .effects .item .effect-source,
+.shadowrun-3e .effects .item .effect-duration,
+.shadowrun-3e .effects .item .effect-controls {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.shadowrun-third-edition .effects .item .effect-controls {
+.shadowrun-3e .effects .item .effect-controls {
   border: none;
 }

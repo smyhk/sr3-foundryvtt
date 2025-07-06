@@ -1,23 +1,27 @@
 {
-  "id": "shadowrun-third-edition",
-  "title": "Shadowrun Third Edition",
-  "description": "The Shadowrun Third Edition system for FoundryVTT!",
+  "id": "shadowrun-3e",
+  "title": "Shadowrun 3e",
+  "description": "The Shadowrun 3e system for FoundryVTT!",
   "authors": [
     {
-      "name": "smyhk",
-      "discord": "smyhk"
+      "name": "Asacolips",
+      "discord": "asacolips"
+    },
+    {
+      "name": "Lee Talman",
+      "discord": ".pizzaWizard"
     }
   ],
-  "url": "https://github.com/smyhk/sr3-foundryvtt",
-  "license": "LICENSE",
+  "url": "Replace this with a link to your public repository",
+  "license": "LICENSE.txt",
   "readme": "README.md",
   "bugs": "Replace this with a link to file issues or tickets",
   "changelog": "CHANGELOG.md",
   "media": [
     {
       "type": "setup",
-      "url": "systems/shadowrun-third-edition/assets/anvil-impact.png",
-      "thumbnail": "systems/shadowrun-third-edition/assets/anvil-impact.png"
+      "url": "systems/shadowrun-3e/assets/anvil-impact.png",
+      "thumbnail": "systems/shadowrun-3e/assets/anvil-impact.png"
     }
   ],
   "version": "0.1.0",
@@ -25,8 +29,8 @@
     "minimum": 12,
     "verified": "13"
   },
-  "esmodules": ["module/shadowrun-third-edition.mjs"],
-  "styles": ["css/shadowrun-third-edition.css"],
+  "esmodules": ["module/shadowrun-3e.mjs"],
+  "styles": ["css/shadowrun-3e.css"],
   "languages": [
     {
       "lang": "en",
@@ -37,9 +41,9 @@
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "manifest": "https://github.com/smyhk/sr3-foundryvtt/releases/download/v0.1.2/system.json",
-  "download": "https://github.com/smyhk/sr3-foundryvtt/archive/refs/tags/v0.1.2.zip",
-  "background": "systems/shadowrun-third-edition/assets/anvil-impact.png",
+  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
+  "download": "This must link to a .zip file of the current version",
+  "background": "systems/shadowrun-3e/assets/anvil-impact.png",
   "grid": {
     "distance": 5,
     "units": "ft"
