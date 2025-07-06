@@ -1,7 +1,7 @@
 {
   "id": "shadowrun-3e",
-  "title": "Shadowrun 3e",
-  "description": "The Shadowrun 3e system for FoundryVTT!",
+  "title": "Shadowrun Third Edtion",
+  "description": "A system for playing the third edition of Shadowrun in the Foundry Virtual Tabletop environment",
   "authors": [
     {
       "name": "smyhk",
@@ -16,8 +16,8 @@
   "media": [
     {
       "type": "setup",
-      "url": "systems/shadowrun-3e/assets/anvil-impact.png",
-      "thumbnail": "systems/shadowrun-3e/assets/anvil-impact.png"
+      "url": "systems/shadowrun-3e/assets/logo.png",
+      "thumbnail": "systems/shadowrun-3e/assets/logo.png"
     }
   ],
   "version": "0.1.2",
@@ -37,9 +37,9 @@
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "manifest": "https://github.com/smyhk/sr3-foundryvtt/releases/download/v0.1.2/system.json",
-  "download": "https://github.com/smyhk/sr3-foundryvtt/archive/refs/heads/main.zip",
-  "background": "systems/shadowrun-3e/assets/anvil-impact.png",
+  "manifest": "https://raw.githubusercontent.com/smyhk/sr3-foundryvtt/refs/heads/main/system.json",
+  "download": "https://github.com/smyhk/sr3-foundryvtt/archive/refs/tags/v0.1.2.zip",
+  "background": "systems/shadowrun-3e/assets/logo.png",
   "grid": {
     "distance": 5,
     "units": "ft"
