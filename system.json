@@ -37,13 +37,13 @@
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "manifest": "https://github.com/smyhk/sr3-foundryvtt/releases/download/v0.1.0/system.json",
-  "download": "https://github.com/smyhk/sr3-foundryvtt/archive/refs/tags/v0.1.0.zip",
+  "manifest": "https://github.com/smyhk/sr3-foundryvtt/releases/download/v0.1.2/system.json",
+  "download": "https://github.com/smyhk/sr3-foundryvtt/archive/refs/tags/v0.1.2.zip",
   "background": "systems/shadowrun-third-edition/assets/anvil-impact.png",
   "grid": {
-        "distance": 5,
-        "units": "ft"
-    },
+    "distance": 5,
+    "units": "ft"
+  },
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power"
 }
