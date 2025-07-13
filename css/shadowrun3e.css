@@ -203,11 +203,11 @@
   text-align: center;
 }
 
-/* Styles limited to shadowrun-3e sheets */
-.shadowrun-3e .item-form {
+/* Styles limited to shadowrun3e sheets */
+.shadowrun3e .item-form {
   font-family: "Roboto", sans-serif;
 }
-.shadowrun-3e .sheet-header {
+.shadowrun3e .sheet-header {
   flex: 0 auto;
   overflow: hidden;
   display: flex;
@@ -216,43 +216,43 @@
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-.shadowrun-3e .sheet-header .profile-img {
+.shadowrun3e .sheet-header .profile-img {
   flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
 }
-.shadowrun-3e .sheet-header .header-fields {
+.shadowrun3e .sheet-header .header-fields {
   flex: 1;
 }
-.shadowrun-3e .sheet-header h1.charname {
+.shadowrun3e .sheet-header h1.charname {
   height: 50px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
 }
-.shadowrun-3e .sheet-header h1.charname input {
+.shadowrun3e .sheet-header h1.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-.shadowrun-3e .sheet-tabs {
+.shadowrun3e .sheet-tabs {
   flex: 0;
 }
-.shadowrun-3e .sheet-body,
-.shadowrun-3e .sheet-body .tab,
-.shadowrun-3e .sheet-body .tab .editor {
+.shadowrun3e .sheet-body,
+.shadowrun3e .sheet-body .tab,
+.shadowrun3e .sheet-body .tab .editor {
   height: 100%;
 }
-.shadowrun-3e .tox .tox-editor-container {
+.shadowrun3e .tox .tox-editor-container {
   background: #fff;
 }
-.shadowrun-3e .tox .tox-edit-area {
+.shadowrun3e .tox .tox-edit-area {
   padding: 0 8px;
 }
-.shadowrun-3e .resource-label {
+.shadowrun3e .resource-label {
   font-weight: bold;
 }
-.shadowrun-3e .items-header {
+.shadowrun3e .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -261,17 +261,17 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.shadowrun-3e .items-header > * {
+.shadowrun3e .items-header > * {
   font-size: 14px;
   text-align: center;
 }
-.shadowrun-3e .items-header .item-name {
+.shadowrun3e .items-header .item-name {
   font-weight: bold;
   padding-left: 5px;
   text-align: left;
   display: flex;
 }
-.shadowrun-3e .items-list {
+.shadowrun3e .items-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -279,12 +279,12 @@
   scrollbar-width: thin;
   color: #444;
 }
-.shadowrun-3e .items-list .item-list {
+.shadowrun3e .items-list .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.shadowrun-3e .items-list .item-name {
+.shadowrun3e .items-list .item-name {
   flex: 2;
   margin: 0;
   overflow: hidden;
@@ -293,46 +293,46 @@
   align-items: center;
   display: flex;
 }
-.shadowrun-3e .items-list .item-name h3, .shadowrun-3e .items-list .item-name h4 {
+.shadowrun3e .items-list .item-name h3, .shadowrun3e .items-list .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
-.shadowrun-3e .items-list .item-controls {
+.shadowrun3e .items-list .item-controls {
   display: flex;
   flex: 0 0 100px;
   justify-content: flex-end;
 }
-.shadowrun-3e .items-list .item-controls a {
+.shadowrun3e .items-list .item-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
 }
-.shadowrun-3e .items-list .item {
+.shadowrun3e .items-list .item {
   align-items: center;
   padding: 0 2px;
   border-bottom: 1px solid #c9c7b8;
 }
-.shadowrun-3e .items-list .item:last-child {
+.shadowrun3e .items-list .item:last-child {
   border-bottom: none;
 }
-.shadowrun-3e .items-list .item .item-name {
+.shadowrun3e .items-list .item .item-name {
   color: #191813;
 }
-.shadowrun-3e .items-list .item .item-name .item-image {
+.shadowrun3e .items-list .item .item-name .item-image {
   flex: 0 0 30px;
   height: 30px;
   background-size: 30px;
   border: none;
   margin-right: 5px;
 }
-.shadowrun-3e .items-list .item-prop {
+.shadowrun3e .items-list .item-prop {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.shadowrun-3e .items-list .items-header {
+.shadowrun3e .items-list .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -341,26 +341,26 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.shadowrun-3e .items-list .items-header > * {
+.shadowrun3e .items-list .items-header > * {
   font-size: 12px;
   text-align: center;
 }
-.shadowrun-3e .items-list .items-header .item-name {
+.shadowrun3e .items-list .items-header .item-name {
   padding-left: 5px;
   text-align: left;
 }
-.shadowrun-3e .item-formula {
+.shadowrun3e .item-formula {
   flex: 0 0 200px;
   padding: 0 8px;
 }
-.shadowrun-3e .effects .item .effect-source,
-.shadowrun-3e .effects .item .effect-duration,
-.shadowrun-3e .effects .item .effect-controls {
+.shadowrun3e .effects .item .effect-source,
+.shadowrun3e .effects .item .effect-duration,
+.shadowrun3e .effects .item .effect-controls {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.shadowrun-3e .effects .item .effect-controls {
+.shadowrun3e .effects .item .effect-controls {
   border: none;
 }

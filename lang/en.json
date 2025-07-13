@@ -1,5 +1,5 @@
 {
-  "SHADOWRUN_3E": {
+  "SHADOWRUN3E": {
     "Ability": {
       "Str": { "long": "Strength", "abbr": "str" },
       "Con": { "long": "Constitution", "abbr": "con" },
@@ -9,8 +9,8 @@
       "Cha": { "long": "Charisma", "abbr": "cha" }
     },
     "SheetLabels": {
-      "Actor": "Shadowrun3E Actor Sheet",
-      "Item": "Shadowrun3E Item Sheet"
+      "Actor": "Shadowrun3e Actor Sheet",
+      "Item": "Shadowrun3e Item Sheet"
     },
     "Item": {
       "Spell": {

@@ -1,5 +1,5 @@
 {
-  "id": "shadowrun-3e",
+  "id": "shadowrun3e",
   "title": "Shadowrun Third Edtion",
   "description": "A system for playing the third edition of Shadowrun in the Foundry Virtual Tabletop environment",
   "authors": [
@@ -16,8 +16,8 @@
   "media": [
     {
       "type": "setup",
-      "url": "systems/shadowrun-3e/assets/logo.png",
-      "thumbnail": "systems/shadowrun-3e/assets/logo.png"
+      "url": "systems/shadowrun3e/assets/logo.png",
+      "thumbnail": "systems/shadowrun3e/assets/logo.png"
     }
   ],
   "version": "0.1.2",
@@ -25,8 +25,8 @@
     "minimum": 12,
     "verified": "13"
   },
-  "esmodules": ["module/shadowrun-3e.mjs"],
-  "styles": ["css/shadowrun-3e.css"],
+  "esmodules": ["module/shadowrun3e.mjs"],
+  "styles": ["css/shadowrun3e.css"],
   "languages": [
     {
       "lang": "en",
@@ -39,7 +39,7 @@
   "socket": false,
   "manifest": "https://raw.githubusercontent.com/smyhk/sr3-foundryvtt/refs/heads/main/system.json",
   "download": "https://github.com/smyhk/sr3-foundryvtt/archive/refs/tags/v0.1.2.zip",
-  "background": "systems/shadowrun-3e/assets/logo.png",
+  "background": "systems/shadowrun3e/assets/logo.png",
   "grid": {
     "distance": 5,
     "units": "ft"

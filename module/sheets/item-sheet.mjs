@@ -7,11 +7,11 @@ import {
  * Extend the basic ItemSheet with some very simple modifications
  * @extends {ItemSheet}
  */
-export class Shadowrun3EItemSheet extends ItemSheet {
+export class Shadowrun3eItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['shadowrun-3e', 'sheet', 'item'],
+      classes: ['shadowrun3e', 'sheet', 'item'],
       width: 520,
       height: 480,
       tabs: [
@@ -26,7 +26,7 @@ export class Shadowrun3EItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = 'systems/shadowrun-3e/templates/item';
+    const path = 'systems/shadowrun3e/templates/item';
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.hbs`;
 
@@ -43,7 +43,7 @@ export class Shadowrun3EItemSheet extends ItemSheet {
     const context = super.getData();
 
     // Use a safe clone of the item data for further operations.
-    const itemData = this.document.toObject(false);
+    const itemData = this.document.toPlainObject();
 
     // Enrich description info for display
     // Enrichment turns text like `[[/r 1d20]]` into buttons
@@ -65,8 +65,8 @@ export class Shadowrun3EItemSheet extends ItemSheet {
     context.system = itemData.system;
     context.flags = itemData.flags;
 
-    // Adding a pointer to CONFIG.SHADOWRUN_3E
-    context.config = CONFIG.SHADOWRUN_3E;
+    // Adding a pointer to CONFIG.SHADOWRUN3E
+    context.config = CONFIG.SHADOWRUN3E;
 
     // Prepare active effects for easier access
     context.effects = prepareActiveEffectCategories(this.item.effects);

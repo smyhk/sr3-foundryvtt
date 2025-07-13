@@ -7,11 +7,11 @@ import {
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class Shadowrun3EActorSheet extends ActorSheet {
+export class Shadowrun3eActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['shadowrun-3e', 'sheet', 'actor'],
+      classes: ['shadowrun3e', 'sheet', 'actor'],
       width: 600,
       height: 600,
       tabs: [
@@ -26,7 +26,7 @@ export class Shadowrun3EActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/shadowrun-3e/templates/actor/actor-${this.actor.type}-sheet.hbs`;
+    return `systems/shadowrun3e/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
   /* -------------------------------------------- */
@@ -40,14 +40,14 @@ export class Shadowrun3EActorSheet extends ActorSheet {
     const context = super.getData();
 
     // Use a safe clone of the actor data for further operations.
-    const actorData = this.document.toObject(false);
+    const actorData = this.document.toPlainObject();
 
     // Add the actor's data to context.data for easier access, as well as flags.
     context.system = actorData.system;
     context.flags = actorData.flags;
 
-    // Adding a pointer to CONFIG.SHADOWRUN_3E
-    context.config = CONFIG.SHADOWRUN_3E;
+    // Adding a pointer to CONFIG.SHADOWRUN3E
+    context.config = CONFIG.SHADOWRUN3E;
 
     // Prepare character data and items.
     if (actorData.type == 'character') {

@@ -1,12 +1,14 @@
 // Import document classes.
-import { Shadowrun3EActor } from './documents/actor.mjs';
-import { Shadowrun3EItem } from './documents/item.mjs';
+import { Shadowrun3eActor } from './documents/actor.mjs';
+import { Shadowrun3eItem } from './documents/item.mjs';
 // Import sheet classes.
-import { Shadowrun3EActorSheet } from './sheets/actor-sheet.mjs';
-import { Shadowrun3EItemSheet } from './sheets/item-sheet.mjs';
+import { Shadowrun3eActorSheet } from './sheets/actor-sheet.mjs';
+import { Shadowrun3eItemSheet } from './sheets/item-sheet.mjs';
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from './helpers/templates.mjs';
-import { SHADOWRUN_3E } from './helpers/config.mjs';
+import { SHADOWRUN3E } from './helpers/config.mjs';
+// Import DataModel classes
+import * as models from './data/_module.mjs';
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -16,13 +18,13 @@ Hooks.once('init', function () {
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
   game.shadowrun3e = {
-    Shadowrun3EActor,
-    Shadowrun3EItem,
+    Shadowrun3eActor,
+    Shadowrun3eItem,
     rollItemMacro,
   };
 
   // Add custom constants for configuration.
-  CONFIG.SHADOWRUN_3E = SHADOWRUN_3E;
+  CONFIG.SHADOWRUN3E = SHADOWRUN3E;
 
   /**
    * Set an initiative formula for the system
@@ -33,9 +35,22 @@ Hooks.once('init', function () {
     decimals: 2,
   };
 
-  // Define custom Document classes
-  CONFIG.Actor.documentClass = Shadowrun3EActor;
-  CONFIG.Item.documentClass = Shadowrun3EItem;
+  // Define custom Document and DataModel classes
+  CONFIG.Actor.documentClass = Shadowrun3eActor;
+
+  // Note that you don't need to declare a DataModel
+  // for the base actor/item classes - they are included
+  // with the Character/NPC as part of super.defineSchema()
+  CONFIG.Actor.dataModels = {
+    character: models.Shadowrun3eCharacter,
+    npc: models.Shadowrun3eNPC
+  }
+  CONFIG.Item.documentClass = Shadowrun3eItem;
+  CONFIG.Item.dataModels = {
+    item: models.Shadowrun3eItem,
+    feature: models.Shadowrun3eFeature,
+    spell: models.Shadowrun3eSpell
+  }
 
   // Active Effects are never copied to the Actor,
   // but will still apply to the Actor from within the Item
@@ -44,14 +59,14 @@ Hooks.once('init', function () {
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet);
-  Actors.registerSheet('shadowrun-3e', Shadowrun3EActorSheet, {
+  Actors.registerSheet('shadowrun3e', Shadowrun3eActorSheet, {
     makeDefault: true,
-    label: 'SHADOWRUN_3E.SheetLabels.Actor',
+    label: 'SHADOWRUN3E.SheetLabels.Actor',
   });
   Items.unregisterSheet('core', ItemSheet);
-  Items.registerSheet('shadowrun-3e', Shadowrun3EItemSheet, {
+  Items.registerSheet('shadowrun3e', Shadowrun3eItemSheet, {
     makeDefault: true,
-    label: 'SHADOWRUN_3E.SheetLabels.Item',
+    label: 'SHADOWRUN3E.SheetLabels.Item',
   });
 
   // Preload Handlebars templates.
@@ -109,7 +124,7 @@ async function createItemMacro(data, slot) {
       type: 'script',
       img: item.img,
       command: command,
-      flags: { 'shadowrun-3e.itemMacro': true },
+      flags: { 'shadowrun3e.itemMacro': true },
     });
   }
   game.user.assignHotbarMacro(macro, slot);
