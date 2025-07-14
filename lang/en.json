@@ -1,12 +1,14 @@
 {
   "SHADOWRUN3E": {
     "Ability": {
-      "Str": { "long": "Strength", "abbr": "str" },
-      "Con": { "long": "Constitution", "abbr": "con" },
-      "Dex": { "long": "Dexterity", "abbr": "dex" },
-      "Int": { "long": "Intelligence", "abbr": "int" },
-      "Wis": { "long": "Wisdom", "abbr": "wis" },
-      "Cha": { "long": "Charisma", "abbr": "cha" }
+      "Body": { "long": "Body", "abbr": "bd" },
+      "Quickness": { "long": "Quickness", "abbr": "qu" },
+      "Strength": { "long": "Strength", "abbr": "st" },
+      "Charisma": { "long": "Charisma", "abbr": "ch" },
+      "Intelligence": { "long": "Intelligence", "abbr": "in" },
+      "Willpower": { "long": "Willpower", "abbr": "wi" },
+      "Essence": { "long": "Essence", "abbr": "es" },
+      "Magic": { "long": "Magic", "abbr": "ma" }
     },
     "SheetLabels": {
       "Actor": "Shadowrun3e Actor Sheet",

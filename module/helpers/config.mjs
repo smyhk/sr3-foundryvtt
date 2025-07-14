@@ -5,19 +5,23 @@ export const SHADOWRUN3E = {};
  * @type {Object}
  */
 SHADOWRUN3E.abilities = {
-  str: 'SHADOWRUN3E.Ability.Str.long',
-  dex: 'SHADOWRUN3E.Ability.Dex.long',
-  con: 'SHADOWRUN3E.Ability.Con.long',
-  int: 'SHADOWRUN3E.Ability.Int.long',
-  wis: 'SHADOWRUN3E.Ability.Wis.long',
-  cha: 'SHADOWRUN3E.Ability.Cha.long',
+  body: 'SHADOWRUN3E.Ability.Body.long',
+  quickness: 'SHADOWRUN3E.Ability.Quickness.long',
+  strength: 'SHADOWRUN3E.Ability.Strength.long',
+  charisma: 'SHADOWRUN3E.Ability.Charisma.long',
+  intelligence: 'SHADOWRUN3E.Ability.Intelligence.long',
+  willpower: 'SHADOWRUN3E.Ability.Willpower.long',
+  essence: 'SHADOWRUN3E.Ability.Essence.long',
+  magic: 'SHADOWRUN3E.Ability.Magic.long',
 };
 
 SHADOWRUN3E.abilityAbbreviations = {
-  str: 'SHADOWRUN3E.Ability.Str.abbr',
-  dex: 'SHADOWRUN3E.Ability.Dex.abbr',
-  con: 'SHADOWRUN3E.Ability.Con.abbr',
-  int: 'SHADOWRUN3E.Ability.Int.abbr',
-  wis: 'SHADOWRUN3E.Ability.Wis.abbr',
-  cha: 'SHADOWRUN3E.Ability.Cha.abbr',
+  bd: 'SHADOWRUN3E.Ability.Bd.abbr',
+  qu: 'SHADOWRUN3E.Ability.Qu.abbr',
+  st: 'SHADOWRUN3E.Ability.St.abbr',
+  ch: 'SHADOWRUN3E.Ability.Ch.abbr',
+  in: 'SHADOWRUN3E.Ability.In.abbr',
+  wi: 'SHADOWRUN3E.Ability.Wi.abbr',
+  es: 'SHADOWRUN3E.Ability.Es.abbr',
+  ma: 'SHADOWRUN3E.Ability.Ma.abbr',
 };
